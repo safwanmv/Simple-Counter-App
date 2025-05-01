@@ -1,10 +1,10 @@
-import React, { Children }  from "react";
+import React from "react";
 import './counterButton.css';
 
-const counterButton=({onclick,Children})=>{
-    return(
-        <button className="btn" onClick={onclick}> {Children} </button>
-    )
-}
+const CounterButton= ({ onClick , children }) => {
+    return (
+        <button className="btn" onClick={onClick}> { children} </button>
+    );
+};
 
-export default counterButton
+export default CounterButton;
